@@ -3,40 +3,185 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nikhil's Hub</title>
+<title>Nikhil Chekkattu Nandan</title>
+<meta name="description" content="Mechanical and manufacturing engineer moving into autonomous driving and AI. M.Eng. Autonomous Driving, Hochschule Coburg.">
 <style>
-  :root { --bg:#f7f7f5; --fg:#1c1c1c; --muted:#666; --card:#fff; --line:#e3e3e0; --accent:#2f5bd3; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#141414; --fg:#eee; --muted:#9a9a9a; --card:#1d1d1d; --line:#2c2c2c; --accent:#7d9bff; } }
+  :root { --bg:#f7f7f5; --fg:#1c1c1c; --muted:#5f5f5f; --card:#fff; --line:#e3e3e0; --accent:#2f5bd3; --chip:#eef1fb; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#141414; --fg:#ececec; --muted:#9a9a9a; --card:#1d1d1d; --line:#2c2c2c; --accent:#8aa5ff; --chip:#222a40; } }
   * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.5 system-ui, sans-serif; }
-  main { max-width:760px; margin:0 auto; padding:48px 16px; }
-  h1 { margin:0 0 4px; font-size:2rem; }
-  p.sub { margin:0 0 32px; color:var(--muted); }
-  h2 { font-size:.85rem; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); margin:32px 0 12px; }
-  .grid { display:grid; gap:12px; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); }
-  a.card { display:block; padding:16px; background:var(--card); border:1px solid var(--line); border-radius:10px; color:inherit; text-decoration:none; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:820px; margin:0 auto; padding:56px 16px 72px; }
+  a { color:var(--accent); }
+  header h1 { margin:0; font-size:clamp(1.8rem, 5vw, 2.4rem); line-height:1.2; }
+  header .role { margin:6px 0 0; font-size:1.1rem; }
+  header .loc { margin:4px 0 20px; color:var(--muted); }
+  nav.links { display:flex; flex-wrap:wrap; gap:8px; }
+  nav.links a { padding:6px 14px; border:1px solid var(--line); border-radius:999px; background:var(--card); text-decoration:none; font-size:.95rem; }
+  nav.links a:hover { border-color:var(--accent); }
+  nav.toc { display:flex; flex-wrap:wrap; gap:16px; margin:32px 0 0; padding:12px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); font-size:.9rem; }
+  nav.toc a { color:var(--muted); text-decoration:none; }
+  nav.toc a:hover { color:var(--accent); }
+  section { margin-top:48px; }
+  h2 { font-size:.8rem; text-transform:uppercase; letter-spacing:.1em; color:var(--muted); margin:0 0 16px; }
+  .stats { display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:12px; margin-top:20px; }
+  .stat { padding:14px 16px; background:var(--card); border:1px solid var(--line); border-radius:10px; }
+  .stat b { display:block; font-size:1.6rem; color:var(--accent); line-height:1.2; }
+  .stat span { font-size:.88rem; color:var(--muted); }
+  .grid { display:grid; gap:12px; grid-template-columns:repeat(auto-fill, minmax(240px, 1fr)); }
+  .card { display:block; padding:18px; background:var(--card); border:1px solid var(--line); border-radius:10px; color:inherit; text-decoration:none; }
   a.card:hover { border-color:var(--accent); }
-  a.card strong { display:block; color:var(--accent); }
-  a.card span { font-size:.9rem; color:var(--muted); }
+  .card h3 { margin:0 0 4px; font-size:1.02rem; }
+  a.card h3 { color:var(--accent); }
+  .card .meta { font-size:.85rem; color:var(--muted); margin-bottom:8px; }
+  .card p { margin:0; font-size:.93rem; }
+  .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+  .tags span { font-size:.78rem; padding:2px 8px; border-radius:6px; background:var(--chip); }
+  .timeline { list-style:none; margin:0; padding:0; }
+  .timeline li { padding:0 0 20px 20px; border-left:2px solid var(--line); position:relative; }
+  .timeline li::before { content:""; position:absolute; left:-6px; top:7px; width:10px; height:10px; border-radius:50%; background:var(--accent); }
+  .timeline h3 { margin:0; font-size:1rem; }
+  .timeline .meta { font-size:.88rem; color:var(--muted); }
+  .timeline p { margin:4px 0 0; font-size:.93rem; }
+  .skills { display:grid; gap:12px; grid-template-columns:repeat(auto-fill, minmax(240px, 1fr)); }
+  footer { margin-top:64px; padding-top:20px; border-top:1px solid var(--line); font-size:.85rem; color:var(--muted); }
 </style>
 </head>
 <body>
 <main>
-  <h1>Nikhil Chekkattu Nandan</h1>
-  <p class="sub">Projects, coursework and profiles in one place.</p>
+  <header>
+    <h1>Nikhil Chekkattu Nandan</h1>
+    <p class="role">Mechanical &amp; Manufacturing Engineer → Autonomous Driving &amp; AI</p>
+    <p class="loc">Germany · M.Eng. Autonomous Driving, Hochschule Coburg</p>
+    <nav class="links">
+      <a href="https://www.linkedin.com/in/nikhilnandan93">LinkedIn</a>
+      <a href="https://github.com/nikhilnandan38">GitHub</a>
+      <a href="https://nikhilnandan38.wixsite.com/nikhil">Portfolio</a>
+      <a href="https://drive.google.com/file/d/1LI0kAoN4-esXuoUY31jJjBH5mvNskBDL/view?usp=sharing">CV</a>
+      <a href="mailto:nikhilnandan38@gmail.com">Email</a>
+    </nav>
+    <nav class="toc">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a>
+      <a href="#education">Education</a><a href="#skills">Skills</a><a href="#repos">Repositories</a>
+    </nav>
+  </header>
 
-  <h2>Repositories</h2>
-  <div class="grid">
-    <a class="card" href="https://github.com/nikhilnandan38/nikhil-chekkattu-nandan"><strong>nikhil-chekkattu-nandan</strong><span>Python, exercises, presentations</span></a>
-    <a class="card" href="https://github.com/nikhilnandan38/hcd-slides"><strong>hcd-slides</strong><span>Human-Centred Design slides</span></a>
-    <a class="card" href="https://github.com/nikhilnandan38/files"><strong>files</strong><span>Course reading</span></a>
-    <a class="card" href="https://github.com/nikhilnandan38/nikhilnandan38"><strong>Profile</strong><span>GitHub profile README</span></a>
-  </div>
+  <section id="about">
+    <h2>About</h2>
+    <p>Mechanical engineer with 7+ years of engineering experience, including 5 years in manufacturing and production engineering. I'm moving from industrial manufacturing systems into AI-driven engineering and autonomous systems, and I enjoy solving real-world problems by combining physical systems with intelligent algorithms.</p>
+    <p>Currently learning PyTorch and deep learning architectures, generative AI for synthetic data, and sensor fusion for autonomous driving. Open to collaborating on computer vision, smart manufacturing and simulation-based autonomous driving projects.</p>
+    <div class="stats">
+      <div class="stat"><b>30%</b><span>manufacturing cost reduction</span></div>
+      <div class="stat"><b>15%</b><span>production efficiency gain</span></div>
+      <div class="stat"><b>20%</b><span>lower MTTR</span></div>
+      <div class="stat"><b>7+ yrs</b><span>engineering experience</span></div>
+    </div>
+  </section>
 
-  <h2>Profiles</h2>
-  <div class="grid">
-    <a class="card" href="https://github.com/nikhilnandan38"><strong>GitHub</strong><span>@nikhilnandan38</span></a>
-  </div>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Team Aegis – Autonomous Biohazard Cleaning Robot</h3>
+        <div class="meta">M.Eng. team project, Hochschule Coburg · 2026</div>
+        <p>Time Keeper &amp; Project Coordinator. Built the robot's decision-making ROS 2 package and contributed system architecture, state and sequence diagrams, plus HMI usability research.</p>
+        <div class="tags"><span>ROS 2</span><span>System architecture</span><span>HCD</span></div>
+      </div>
+      <div class="card">
+        <h3>AI/ML Predictive Data Pipeline</h3>
+        <div class="meta">Engineering project · 2025</div>
+        <p>End-to-end Python pipeline: ingestion, preprocessing, scikit-learn training, evaluation and visualization. 96.6% prediction accuracy.</p>
+        <div class="tags"><span>Python</span><span>scikit-learn</span><span>pandas</span></div>
+      </div>
+      <div class="card">
+        <h3>Ball Balancing Beam</h3>
+        <div class="meta">Engineering project · 2025</div>
+        <p>Real-time PID closed-loop control on an ESP32 with a time-of-flight sensor, calibrated and tested under varying conditions.</p>
+        <div class="tags"><span>Control</span><span>ESP32</span><span>Embedded</span></div>
+      </div>
+      <a class="card" href="https://github.com/nikhilnandan38/nikhil-chekkattu-nandan">
+        <h3>Time Series Forecasting with ARIMA</h3>
+        <div class="meta">Case study &amp; presentation</div>
+        <p>Time series analysis and forecasting with ARIMA, with dataset, slides and solved Python exercises.</p>
+        <div class="tags"><span>Python</span><span>Time series</span><span>Statistics</span></div>
+      </a>
+      <div class="card">
+        <h3>ATV Quad Bike</h3>
+        <div class="meta">B.Sc. major project</div>
+        <p>SolidWorks design, ANSYS finite element structural analysis, GD&amp;T tolerance analysis and documentation.</p>
+        <div class="tags"><span>SolidWorks</span><span>ANSYS FEA</span><span>GD&amp;T</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul class="timeline">
+      <li>
+        <h3>Manufacturing &amp; Production Engineer</h3>
+        <div class="meta">Forcetech W.L.L., Bahrain · Feb 2019 – Dec 2023</div>
+        <p>Cut costs 30% and raised efficiency 15% with DFMA/DtC and preventive maintenance; reduced MTTR 20%. Built Python SPC and Cp/Cpk analysis pipelines, led Factory Acceptance Tests and authored FMEAs and Inspection &amp; Test Plans.</p>
+      </li>
+      <li>
+        <h3>Project Engineer</h3>
+        <div class="meta">Cargill India Ltd. (via Care Utility Products), India · Oct 2018 – Jan 2019</div>
+        <p>Coordinated manufacturing and assembly projects; prepared validation and compliance documentation.</p>
+      </li>
+      <li>
+        <h3>Execution / Piping Engineer</h3>
+        <div class="meta">H'Reck Engineers, Reliance Industries Jamnagar, India · Jan 2018 – Oct 2018</div>
+        <p>Led a 15-member cross-disciplinary team; reviewed engineering drawings for code compliance.</p>
+      </li>
+      <li>
+        <h3>CAD Draftsman – ELV Systems (Trainee)</h3>
+        <div class="meta">CTL Infocom, India · Nov 2016 – Jul 2017</div>
+        <p>AutoCAD layout, shop and as-built drawings for extra-low-voltage building systems.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul class="timeline">
+      <li>
+        <h3>M.Eng. Autonomous Driving (in progress)</h3>
+        <div class="meta">Hochschule Coburg, Germany · Feb 2026 – present</div>
+        <p>System Architecture &amp; Safety Concept · System Test &amp; Product Launch · Human-Centered Design · Environmental Perception &amp; Data Fusion</p>
+      </li>
+      <li>
+        <h3>Post-Graduate Diploma, MEP Engineering</h3>
+        <div class="meta">SMECH Automation, India · 2016 · TÜV Rheinland certified</div>
+      </li>
+      <li>
+        <h3>B.Sc. Mechanical Engineering</h3>
+        <div class="meta">Mahatma Gandhi University, Kerala, India · 2012 – 2016</div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card"><h3>AI &amp; Data</h3><div class="tags"><span>Python</span><span>PyTorch</span><span>TensorFlow</span><span>scikit-learn</span><span>pandas</span><span>OpenCV</span><span>SQL</span><span>MATLAB</span></div></div>
+      <div class="card"><h3>Autonomous Systems</h3><div class="tags"><span>ROS 2</span><span>Sensor fusion</span><span>Control systems</span><span>C++</span><span>Linux</span><span>Git</span></div></div>
+      <div class="card"><h3>Manufacturing &amp; Quality</h3><div class="tags"><span>SPC</span><span>Cp/Cpk</span><span>FMEA</span><span>FAT</span><span>DFMA</span><span>Design-to-Cost</span><span>Root-cause analysis</span></div></div>
+      <div class="card"><h3>Design &amp; Tools</h3><div class="tags"><span>SolidWorks</span><span>CATIA V5</span><span>AutoCAD</span><span>ANSYS</span><span>SAP MM/PP/PM</span></div></div>
+    </div>
+    <p style="margin-top:16px;font-size:.93rem"><b>Languages:</b> English C2 · German A2 (B1 in progress) · Hindi native · Malayalam native<br>
+    <b>Certifications:</b> AutoCAD Certified Professional (Autodesk) · Generative AI Fundamentals (Google) · Python Programming · TÜV SÜD Constructional Safety</p>
+  </section>
+
+  <section id="repos">
+    <h2>Repositories</h2>
+    <div class="grid">
+      <a class="card" href="https://github.com/nikhilnandan38/nikhil-chekkattu-nandan"><h3>nikhil-chekkattu-nandan</h3><p>ARIMA case study, Python exercises, presentations</p></a>
+      <a class="card" href="https://github.com/nikhilnandan38/hcd-slides"><h3>hcd-slides</h3><p>Human-Centered Design course slides</p></a>
+      <a class="card" href="https://github.com/nikhilnandan38/files"><h3>files</h3><p>Course reading: Scrum case studies</p></a>
+      <a class="card" href="https://github.com/nikhilnandan38/nikhilnandan38"><h3>nikhilnandan38</h3><p>GitHub profile README</p></a>
+    </div>
+  </section>
+
+  <footer>© 2026 Nikhil Chekkattu Nandan · <a href="mailto:nikhilnandan38@gmail.com">nikhilnandan38@gmail.com</a></footer>
 </main>
 </body>
 </html>
